@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* welcome section styling */
+.welcome {
+  background: #2d25a0;
+  height: 677px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 30%);
+  column-gap: 30px;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.main-info {
+  width: 485px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: 102px;
+  margin-bottom: 169px;
+}
+.main-info a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 24px;
+  background: #e02c6d;
+  color: white;
+  font-weight: 500px;
+  margin-top: 27px;
+  transition: transform 0.3s;
+}
+.main-info a:hover {
+  background: #c2265f;
+  transform: scale(1.1);
+}
+.main-title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: white;
+}
+.main-banner {
+  margin-top: 130px;
+  margin-right: auto;
+  margin-bottom: 86px;
+}
+.main-banner img {
+  width: 556.01px;
+  height: 438px;
+  transition: all 0.3s;
+}
+.main-banner img:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+/* players section styling */
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  grid-auto-rows: 474px;
+  row-gap: 27px;
+  column-gap: 30px;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+.player {
+  padding: 15px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.125);
+}
+.player img {
+  width: 300px;
+  height: 256px;
+}
+.player h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  color: #18191f;
+  margin: 10px 0px;
+}
+.player p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 10px 0px;
+  color: #6c6c6c;
+}
+/* vote section styling */
+.vote {
+  background-color: rgba(45, 37, 160, 0.8);
+  margin-bottom: 100px;
+}
+.vote-title {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding: 50px;
+}
+.vote-info {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  column-gap: 30px;
+  justify-content: center;
+}
+.vote label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 20px;
+}
+.vote input {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 30px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.vote button {
+  display: block;
+  font-size: 20px;
+
+  background: #e02c6d;
+
+  padding: 20px;
+  background: #e02c6d;
+
+  margin-bottom: 20px;
+  width: 140px;
+  height: 30px;
+  line-height: 0;
+  transition: all 0.3s;
+  color: white;
+}
+.vote button:hover {
+  background: #c2265f;
+}
+.vote-players-image img {
+  width: 556.01px;
+  display: inline-block;
+}
+/* highlights section styling */
+.highlights {
+  background-color: rgba(45, 37, 160, 0.8);
+  margin-bottom: 80px;
+}
+.highlights h1 {
+  color: white;
+  padding: 30px;
+  font-size: 50px;
+  text-align: center;
+}
+.highlights h2 {
+  color: white;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+.highlights-info {
+  display: grid;
+  grid-template-columns: repeat(2, 30%);
+  column-gap: 100px;
+  justify-content: center;
+}
+.highlights-video {
+  margin-bottom: 40px;
+}
+video {
+  display: inline-block;
+}
+/* footer styling */
+footer {
+  text-align: center;
+}
+footer .social-links {
+  display: grid;
+  grid-template-columns: repeat(4, 32px);
+  justify-content: center;
+  column-gap: 14px;
+  margin-bottom: 20px;
+}
+footer img {
+  display: inline-block;
+  width: 483.87px;
+  height: 110px;
+}
+
+footer .social-links .icons {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background: rgba(12, 14, 24, 0.1);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+footer .icons:hover {
+  background: rgba(12, 14, 24, 0.2);
+}
+
+footer .icons a {
+  display: inline-block;
+  text-decoration: none;
+  color: #969bab;
+  text-align: center;
+  border-radius: 50%;
+}
+footer .icons i {
+  padding: 7px;
+}
+footer p {
+  margin-top: 20px;
+  margin-bottom: 63px;
+  font-size: 18px;
+}
+/* media query for mobile device */
+@media only screen and (max-width: 688px) {
+  .welcome {
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 45%;
+
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .main-info {
+    width: 278px;
+    height: 138px;
+    align-items: baseline;
+    margin-left: 10%;
+  }
+  .main-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: white;
+  }
+  .main-banner img {
+    width: 329px;
+    height: 259.17px;
+    margin-left: 10%;
+  }
+  .players {
+    margin-top: 50px;
+
+    width: 100%;
+    grid-template-columns: repeat(1, 330px);
+  }
+  .vote-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    column-gap: 30px;
+    justify-content: center;
+  }
+  .vote-players-image img {
+    width: 329px;
+    display: inline-block;
+  }
+  .vote-title {
+    font-size: 36px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .highlights-info {
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    column-gap: 100px;
+  }
+  .highlights-video video {
+    height: 200px;
+    width: 300px;
+    padding-right: 25%;
+  }
+  .highlights h1 {
+    font-size: 36px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  footer img {
+    display: inline-block;
+    width: 80%;
+  }
+}
